@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clubs Portal</title>
+    <link rel="icon" href="data:image/jpeg;base64,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" type="image/icon type">
+    <link rel="stylesheet" href="style1.css"type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" type="text/css"/>
+
+    </head>
+
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="_LOGO.gif"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="javascript:history.go()">Home</a></li>
+                    <li><a href="#clubs">Various Clubs</a></li>
+                    <li><a href="/contactUs">Contact US</a></li>  
+                    <li><a href="/">Logout </a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1 class="dipesh">Vision of DIT Pune</h1>
+           
+            <p>D.Y.Patil Institute of Technology aspires to be the leader in Higher
+                technical <br>education and research of International repute
+            </p>
+            <a href="https://engg.dypvp.edu.in/" target="_blank" class="hero-btn">Visit Us To Know More</a>
+        </div>
+    </section>
+    <!-- Clubs  -->
+    <section class="clubs" id="clubs">
+        <h1>Various Clubs In DIT</h1>
+        <p>All Technical and Non-Technical Events</p>
+
+        <div class="row">
+            <div class="club-col">
+                <img src="csilogo.png" width="150px" height="150px" id="pcsb_logo_club">
+                <h2>DIT CSI Student Branch</h2>
+                <p style="text-align:justify;">CSI is a student council of Department of Computer Engineering at Pad. Dr. D.Y. Patil Institute of Engineering and Technology, Pimpri. Formed in the year 2012, the club has always been "For the students and By the students"
+                    <br>
+                </p>
+                <p class="contact_para"><b>President :- </b><br>
+                    <b>Ameya Pandav - 0000000000 </b>
+                    <br><br>
+            
+                        <form action="/events" method="post">
+                            <a id="CSI"> 
+                            <input type="submit" name="Club" value="Events of CSI"/>
+                        </a>
+                        </form>
+                       
+                   
+                </p>
+            </div>
+           
+            <div class="club-col">
+                <img src="aceslogo.jpeg" width="150px" height="150px" id="robo_logo_club">
+                <h2>ACES</h2>
+                <p style="text-align:justify;">ACES hosts activities and events for students that engage them in a healthy competitive environment alongside academic life and provide hands-on, real-world experience. This aids in the development of students as programmers, leaders, and active members. In an incentive to take this a step further, ACES publishes blogs on the latest tech as also posts videos and tutorials to guide the students<br></p>
+                    <p><b>President:- </b><br>
+                        <b>Mrudul Khairnar  </b>
+                        <br><br>
+                        <form action="/events" method="post">
+                            <a id="CSI"> 
+                            <input type="submit" name="Club" value="Events of ACES"/>
+                        </a>
+                        </form>  
+                        <br><br>
+                        
+                    </a>
+                </p>
+            </div>
+            <div class="club-col">
+                <img src="dsailogo.jpeg" width="150px" height="150px" id="pisb_logo_club">
+                <h2>DSAII Student Branch</h2>
+                <p style="text-align:justify;">We at DSAII Club, want to help our peers to grow and reach their maximum potential. We know one person can’t make a huge difference but together we can!DSAII Club is fresh and new and aims for betterment of ourselves and everyone who is a part of it!<br></p>
+                <p class="contact_para"><b>President :- </b> <br>
+                    <b>Kashish Nahar-0000000000 </b><br><br>
+                    <form action="/events" method="post">
+                        <a id="CSI"> 
+                        <input type="submit" name="Club" value="Events of DSAII"/>
+                    </a>
+                    </form>
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="clubs">
+        <div class="row">
+            <div class="club-col">
+                <img src="devkraftlogo.jfif" width="200px" height="200px">
+                <h2>DevKraft</h2>
+                <p style="text-align:justify;">Team DevKraft is an initiative by a group of Students who want to make Engineering less painful to all the students around the nation.
+                    <br><br></p>
+                <p><b>President :- </b><br>
+                    <b>Rahul Pandit - 00000000000 </b>
+                    <br><br>
+                    <form action="/events" method="post">
+                        <a id="CSI"> 
+                        <input type="submit" name="Club" value="Events of DevKraft"/>
+                    </a>
+                    </form>
+                </p>
+            </div>
+            <div class="club-col">
+                <img src="gdsedit.jpg" width="200px" height="200px" id="pasc_logo_club">
+                <h2>GDSE</h2>
+                <p style="text-align:justify;"> Explore more than 1,900 college and university chapters across more than 100 countries. Meet and learn with other budding developers and build solutions for local businesses and communities with Google technology.
+                <br><br>
+                </p>
+                   <p><b>Lead :- </b> <br>
+                    <b>Harsh Anand : 0000000000 </b> <br><br>
+                    <form action="/events" method="post">
+                        <a id="CSI"> 
+                        <input type="submit" name="Club" value="Events of GDSC"/>
+                    </a>
+                    </form>
+                </p>
+            </div>
+            <div class="club-col">
+                <img src="rotractlogo.jpg" width="200" height="200" id="cmc_logo_club">
+                <h2>ROTRACT</h2>
+                <p style="text-align:justify;">Rotaract clubs are a part of global effort to bring peace and international understanding to the world. This effort starts at the community level but knows no limits in its outreach. Rotaractors have access to the many resources of Rotary International (RI) and The Rotary Foundation. Rotary International provides the administrative support that helps Rotaract club's thrive.
+
+                    <br><br></p><br>
+                   <p> <b>President :- </b> <br>
+                    <b>Sahil Shrivastava : 0000000000 </b><br><br>
+                    <form action="/events" method="post">
+                        <a id="CSI"> 
+                        <input type="submit" name="Club" value="Events of Rotract"/>
+                    </a>
+                    </form>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section class="clubs">
+        <div class="row">
+            <div class="club-col">
+                <img src="debsoc logo.png" width="250px" height="200px">
+             
+                <p style="text-align:justify;">DEBSOC is the non technical club in PICT that focuses on the overall personality development of a student. Aim of DEBSOC is to improve the communication and public speaking skills of an individual and give him confidence. Debsoc was founded in 2019 under the ECA committee and guidance of Pallavi Joshi mam. 
+                    <br><br></p>
+                <p><b>Chairperson :- </b><br>
+                    <b>Satyajit Roy - 7028929568 </b>
+                    <br><br>
+                    <a href="https://www.pictcsi.com/" class="hero-btn">
+                        <font size="3" color="black">To Know More Click Here</font>
+                    </a>
+                </p>
+            </div>
+            <div class="club-col">
+                <img src="pictoreal logo final.png" width="220px" height="175px" id="pasc_logo_club">
+                <p style="text-align:justify;">PICTOREAL is a group of high-spirited and effervescent individuals. It is one of the most sought-after non-technical clubs at Pune Institute of Computer Technology (PICT). It has published 22 vibrant magazines so far, all of them portraying the remarkable contributions of its members. 
+                <br><br>
+                </p>
+                   <p><b>Chairperson :- </b> <br>
+                    <b>Onkar Litake-9881149694 </b> <br><br>
+                    <a href="https://pict.acm.org/" class="hero-btn">
+                        <font size="3" color="black">To Know More Click Here</font>
+                    </a>
+                </p>
+            </div>
+            <div class="club-col">
+                <img src="PNAB LOGO.png" width="200" height="200" id="pnab_logo_club">
+              
+                <p style="text-align:justify;">The team aims to publish official college newsletter and annual institute brochure. PNAB team is divided into three teams, content team, design team and photography team. To update the college students about the latest happenings such as college events, cultural fests, technical fests, club events, sports meet, etc. has been our motto. <br><br></p><br>
+                   <p> <b>Chairperson :- </b> <br>
+                    <b>Dhaval Gundecha : 8459096896 </b><br><br>
+                    <a href="" class="hero-btn">
+                        <font size="3" color="black">To Know More Click Here</font>
+                    </a>
+                </p>
+            </div>
+        </div>
+    </section> -->
+
+
+    <!-- <section class="clubs">
+        <div class="row">
+            <div class="club-col">
+                <img src="tedx pict with whiteground.jpg" width="370px" height="100px">
+          
+                <p style="text-align:justify;">We at TEDX PICT work for the sole purpose of bringing together an event that prioritises the sharing of ideas,stories and innovtions that benefit the world at large.
+                    <br><br></p>
+                <p><b>Head of Branding Team :- </b><br>
+                    <b>Amey Dhake - 90750 09347</b>
+                    <br><br>
+                    <a href="https://www.tedxpict.com" class="hero-btn">
+                        <font size="3" color="black">To Know More Click Here</font>
+                    </a>
+                    <br><br>
+                    <a href="http://adityamore7000.github.io/clubs-pict-tedx" class="hero-btn">
+                        <font size="3" color="black">Why Should You Join This Club??</font>
+                    </a>
+                </p>
+            </div>
+        </div>
+    </section>-->
+
+    
+    <!-- Campus Section  -->
+    <section class="campus">
+        <h1>Our Workstations</h1>
+        <p></p>
+
+        <div class="row">
+            <div class="campus-col">
+                <img src="b.jpg" height="300">
+                <div class="layer">
+                    <h3>
+                        <font color="white">DIT PUNE</font>
+                    </h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="PICT LIBRARY.jpeg" height="300">
+                <div class="layer">
+                    <h3>
+                        <font color="white">DIT LIBRARY</font>
+                    </h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="PICT COMP DEPT.webp">
+                <div class="layer">
+                    <h3>
+                        <font color="white">DIT CAMPUS</font>
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Facilities  -->
+    <!-- <section class="facilities">
+        <h1>Our Facilities</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+
+        <div class="row">
+            <div class="facilities-col">
+                <img src="PICT LIBRARY.jpeg" alt="">
+                <h3>World Class Library</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro ratione unde ipsa cum pariatur
+                    deleniti a provident et quibusdam laboriosam!</p>
+            </div>
+            <div class="facilities-col">
+                <img src="PICT.jpg" alt="">
+                <h3>PICT</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro ratione unde ipsa cum pariatur
+                    deleniti a provident et quibusdam laboriosam!</p>
+            </div>
+            <div class="facilities-col">
+                <img src="cafeteria.png" alt="">
+                <h3>Tasty and Healty Food</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro ratione unde ipsa cum pariatur
+                    deleniti a provident et quibusdam laboriosam!</p>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Call To Action  -->
+    <section class="cta">
+        <h1>To Contact Us Click Below</h1>
+        <a href="/contactUs" class="hero-btn">CONTACT US</a>
+    </section>
+
+    <!-- Footer Section  -->
+
+    <section class="footer">
+        <h3>About Us</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis nulla dolores iusto eaque,<br> eius
+            perferendis quia deleniti culpa. Eaque debitis iste, ea ad officiis corrupti!</p>
+        <div class="icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-linkedin"></i>
+        </div>
+    </section>
+
+
+    <!-- JavaScript for Toggle Menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+    <!-- <p>Page Views:-</p>
+     hitwebcounter Code START (Page Views)-->
+    <!-- <a href="https://www.hitwebcounter.com" target="_blank">
+        <img src="https://hitwebcounter.com/counter/counter.php?page=7995118&style=0025&nbdigits=5&type=page&initCount=0"
+            title="Free Counter" Alt="web counter" border="0" /></a>
+    <br>
+    <p>Unique Visitors:-</p> -->
+    <!-- hitwebcounter Code START (Unique Visitors)-->
+    <!-- <a href="https://www.hitwebcounter.com" target="_blank">
+        <img src="https://hitwebcounter.com/counter/counter.php?page=7995119&style=0025&nbdigits=5&type=ip&initCount=0"
+            title="Free Counter" Alt="web counter" border="0" />
+    </a> --> 
+
+
+</body>
+<script src="https://kit.fontawesome.com/44a5a88e05.js" crossorigin="anonymous" type="text/javascript"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+    <script>
+      var typeData = new Typed(".dipesh", {
+        strings: [
+        "VISION OF DIT PUNE",
+        ],
+        loop: true,
+        typeSpeed: 200,
+        backSpeed: 100,
+        backDelay: 600,
+      });
+    </script>
+    <script src="C:/Users/DELL/Downloads/Telegram Desktop/PBL/PBL/Notification/index.js"></script>
+</html>

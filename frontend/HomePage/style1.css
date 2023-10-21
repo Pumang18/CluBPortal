@@ -1,0 +1,543 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.dipesh{
+   color: #fcfcfc;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(background.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+.wrapper{
+    background-image:  linear-gradient(rgb(0, 0, 0),rgb(235, 243, 247))
+}
+
+nav img{
+    width: 150px;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+#club{
+    color: #fff;
+   
+    top: 5rem;
+    font-size: 3rem;
+    color:ghostwhite;
+    letter-spacing: 2px;
+    text-shadow: 0 0 20px rgba(246, 246, 246, 0.703);
+ 
+}
+#para1{
+    color:rgb(27, 186, 222)
+}
+#work{
+    color: #fff;
+   
+    top: 5rem;
+    font-size: 2.5rem;
+    color:#37474f;
+    letter-spacing: 1px;
+    text-shadow: 0 0 20px rgba(246, 246, 246, 0.83);
+}
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.text-box h1{
+    font-size: 62px;
+}
+
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: white;
+}
+
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+input{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 40px 40px;
+    font-size: 16px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+input:hover{
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 0.5s;
+    
+}
+
+.hero-btn:hover{
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 0.5s;
+    
+}
+nav .fa{
+    display: none;
+}
+
+@media(max-width: 700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: fixed;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        font-size: 10px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+}
+
+/* Clubs  */
+.clubs{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+#dipesh h1{
+    font-size: 36px;
+    font-weight: 600;
+    color: darkblue;
+}
+
+p{
+    color: black;
+    font-size: 21px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+    font-family: "Oswald",sans-serif;
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.club-col{
+    flex-basis: 31%;
+    background-image: linear-gradient(180deg, rgb(57, 57, 201), rgb(44, 202, 241));
+    /* background: #288bd2ba; */
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+.club-col img{
+    margin-top: -1%;
+    margin-bottom: -1%;
+    background-color: black;
+}
+#pcsb_logo_club{
+    margin-top: 0%;
+    margin-bottom: 1%;
+}
+
+#pisb_logo_club{
+    margin-top: 5%;
+    margin-bottom: -0%;
+}
+#robo_logo_club{
+    margin-top: 4%;
+    margin-bottom: -2%;
+}
+#pisb_hero-btn{
+    margin-top: 3%;
+}
+#robo_hero-btn{
+    margin-top: 3%;
+}
+#pasc_logo_club
+{
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+#cmc_logo_club
+{
+    margin-top: 1%;
+    margin-bottom: 0.5%;
+}
+.contact_para{
+    color: black;
+}
+b{
+    color: black;
+}
+h2{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+    color: azure;
+}
+
+.club-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+
+@media(max-width:700px){
+    .row{
+        flex-direction: column;
+    }
+}
+
+/* Campus  */
+
+.campus{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.campus-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.campus-col img{
+    width: 100%;
+    display: block;
+}
+
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+    box-shadow: 0 0 20px #333;
+    filter: grayscale(100%);
+    object-fit: cover;
+}
+
+.layer:hover{
+  transition: 0.5s;
+  filter: drop-shadow(0 0 10px #333);
+  filter: grayscale(0%);
+
+}
+.layer h3{
+    opacity: 0;
+    transition: 0.5s;
+}
+/* .layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 0;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+
+} */
+
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+
+/* Facilities  */
+.facilities{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.facilities-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+
+.facilities-col img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.facilities-col p{
+    padding: 0;
+}
+
+.facilities-col h3{
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+/* call to action  */
+.cta{
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(banner2.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.cta h1{
+    color: #fff;
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+@media(max-width: 700px){
+    .cta h1{
+        font-size: 24px;
+    }
+}
+
+/* footer */
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.footer h3{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+
+/* Contact Us Page  */
+.location{
+    width: 80%;
+    margin: auto;
+    padding: 80px 0;
+
+}
+
+.location iframe{
+    width: 100%;
+}
+
+.contact-us{
+    width: 80%;
+    margin: auto;
+}
+
+.contact-col{
+    flex-basis: 48%;
+    margin-bottom: 30px;
+}
+
+.contact-col div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+/* span p{
+    color: black;
+} */
+
+.contact-col div .fa{
+    font-size: 28px;
+    color: #f44336;
+    margin: 10px;
+    margin-right: 30px;
+}
+
+.contact-col div p{
+    padding: 0;
+}
+
+.contact-col div h5{
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+}
+
+.contact-col input, .contact-col textarea{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* profile card: */
+:root{
+    --clr-primary:#651fff;
+    --clr-gray:#37474f;
+    --clr-gray-light:#b0bec5;
+}
+
+*{
+    box-sizing: border-box;
+    margin:0 ;
+    padding:0;
+}
+
+body{
+    color:var(--clr-gray);
+}
+
+.wrapper-grid{
+    display: grid;
+    grid-template-columns:minmax(300px, 1fr);
+    justify-content: center;
+    grid-gap: 2rem;
+    margin: 2rem;
+}
+
+.container{
+    box-shadow: 0px 2px 8px 0px var(--clr-gray-light);
+    text-align: center;
+    border-radius: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.banner-img{
+    position: absolute;
+    background-image: url(background\ website.jpg);
+    height: 10rem;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.profile-img{
+    width: 8rem;
+    clip-path: circle(80px at center);
+    margin-top: 4.5rem;
+}
+
+.name{
+    font-size: 1.5rem;
+}
+
+.descripton{
+    margin: 1rem 2rem;
+    font-size: 0.9rem;
+
+}
+
+.btn{
+    width: 100%;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: var(--clr-primary);
+    padding: 1rem;
+}
+
+@media screen and (min-width:500px){
+    .wrapper-grid{
+        grid-template-columns: repeat(2,fr);
+    }
+}
+
+@media screen and (min-width : 760px){
+    .wrapper-grid{
+        grid-template-columns: repeat(3,fr);
+}
+}

@@ -1,0 +1,20 @@
+
+.multiCard{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 10vh;
+
+    background: -webkit-linear-gradient(left,#003366,#004080,#0059b3);
+    align-items: stretch;
+}
+.mycard{
+    padding: 10px;
+
+    margin: auto;
+    margin-bottom: 5vh;
+    /* flex: 1 1 25%; */
+    border-radius: 8px 8px 20px 20px;
+    border-color: black;
+    border-width: 3px;
+}
